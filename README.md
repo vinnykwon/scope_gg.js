@@ -6,7 +6,8 @@ Mobile-API for [SCOPE.GG](https://play.google.com/store/apps/details?id=com.scop
 async function main() {
 	const { ScopeGg } = require("./scope_gg.js")
 	const scopeGg = new ScopeGg()
-	await scopeGg.getGrenades("mapName", "grenadeType", "tickrate")
+	const greandes = await scopeGg.getGrenades("mapName", "grenadeType", "tickrate")
+	console.log(grenades)
 }
 
 main()
